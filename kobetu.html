@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  ##html:doctype## ##html:html##
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45373263-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-45373263-6', {
+        'page_path': '/dhw/m/unit_yamaguchi_reserve/input',
+        'linker': {
+          'domains': ['gsacademy.jp', 'krs.bz']
+        }
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: 608094820 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-608094820"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-608094820');
+    </script>##html:content_type##
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link href="/css/zero_form.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/css/other.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <style type="text/css">
+      body {
+        background-color: #ffffff;
+      }
+
+      div#content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        margin-top: 0px;
+      }
+
+      strong.required {
+        color: red;
+        font-size: medium;
+      }
+
+      div#b1362 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      div#b1362 a img {
+        border: 0px;
+      }
+
+      div#gslogo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      div#gslogo a img {
+        border: 0px;
+      }
+
+      h2#b1364 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: x-large;
+        color: #09080d;
+      }
+
+      p#b1359 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: small;
+        color: #30373f;
+      }
+
+      p#b1369 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: large;
+        /*color: #fd0000;*/
+      }
+
+      p#b1368 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: small;
+        color: #000000;
+      }
+
+      label {
+        margin-left: 3px;
+        margin-right: 10px;
+      }
+
+      li.error {
+        color: #ff0000;
+        font-size: xx-small;
+        display: block;
+      }
+
+      li.warning {
+        color: #ff0000;
+        font-size: xx-small;
+        display: block;
+      }
+
+      strong.required {
+        color: #f8a50a;
+        font-size: xx-small
+      }
+
+      div#b1360 p {
+        color: #f8a50a;
+        font-size: xx-small;
+        text-align: left;
+      }
+
+      div#b1360 label,
+      div#b1360 select,
+      div#b1360 option {
+        font-size: large;
+      }
+
+      div#b1360 table tr th {
+        width: 300px;
+        background-color: #dfdfdf;
+        color: #00A7EA;
+        font-size: medium;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        background-color: #a8eeff;
+      }
+
+      div#b1360 table tr td {
+        width: 500px;
+        background-color: #dfdfdf;
+        color: #00A7EA;
+        font-size: small;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      div#b1360 div#command {
+        text-align: center;
+      }
+
+      div#b1360 {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      div#b1360 table {
+        width: 800px;
+        margin-bottom: 10px;
+      }
+
+      #e_1970[tel] {
+        width: 300px;
+      }
+
+      span.notice {
+        font-size: x-small;
+      }
+
+      div#b1361 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        margin: 0px 10px;
+      }
+
+      /*--------------------------------------------------------------------*/
+
+      body {
+        background: #ffffff;
+        font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+      }
+
+      #content {
+        padding-bottom: 200px;
+      }
+
+      #b1362 {
+        position: relative;
+      }
+
+      #gslogo {
+        position: relative;
+      }
+
+      h2#b1364 {
+        color: #00A7EA;
+        font-size: 1.9rem;
+        text-shadow: 0px 0px 10px #B5DCF2;
+        margin-top: 1.9rem;
+      }
+
+      p#b1368 {
+        font-size: .9rem;
+      }
+
+      #b1362 img {
+        max-width: 100%;
+      }
+
+      div#b1360 table tr th {
+        background-color: transparent;
+      }
+
+      div#b1360 table tr td {
+        background-color: transparent;
+      }
+
+      div#b1360 table tr th {
+        width: 200px;
+      }
+
+      input[type="text"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border-style: none;
+        text-align: center;
+        background: #B5DCF2;
+        box-shadow: inset 2px 2px 8px rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        color: #444;
+      }
+
+      input[type="text"]:focus {
+        -webkit-transform: scaleX(1.02);
+        transform: scaleX(1.02);
+      }
+
+      div#b1360 select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 34px;
+        font-size: 1.2rem;
+        padding: 4px 30px 5px 10px;
+        border-radius: 6px;
+        border-style: none;
+        text-align: center;
+        background: #B5DCF2 url(##img:48##) no-repeat right 5px center;
+        box-shadow: inset 2px 2px 8px rgba(0, 0, 0, .2);
+        color: #444;
+        font-size: 1.2rem;
+      }
+
+      div#b1360 select:focus {
+        background-color: #fff;
+      }
+
+      input[type="radio"]+label,
+      input[type="checkbox"]+label {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+      }
+
+      input[type="radio"]:checked+label,
+      input[type="checkbox"]:checked+label {
+        color: #66f;
+        text-shadow: 0px 0px 10px rgba(0, 0, 200, 1);
+      }
+
+      input[type="submit"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #ff8000;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+        border-style: none;
+        padding: 16px 80px;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        color: #fff;
+        font-weight: bold;
+        font-size: .8rem;
+      }
+
+      input[type="submit"]:hover {
+        background: rgba(255, 128, 0, .5);
+        /*box-shadow: 0px 4px 14px rgba(0,0,0,.4);*/
+        box-shadow: 0px 0px 40px rgba(255, 255, 255, .8);
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        color: #FFF;
+      }
+
+      table li.error {
+        font-size: 0.75rem;
+      }
+
+      div#content input {
+        text-align: left;
+      }
+
+      /* ==== 電話番号入力欄を半角数字、ハイフン以外を禁止 ==== */
+
+      #td_1970 {
+        position: relative;
+      }
+
+      #td_1970:after {
+        content: '';
+        display: block;
+        color: #fff;
+        font-size: 0.75rem;
+        width: 10rem;
+        background-color: #f00;
+        padding: 4px 6px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+      }
+
+      #td_1970.active:after {
+        content: '半角数字とハイフンのみ';
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* ==== 電話番号入力欄を半角数字、ハイフン以外を禁止ここまで ==== */
+
+      tr.telNum>td>input {
+        width: 60px;
+      }
+
+      #e_8433 {
+        font-size: 8rem;
+      }
+    </style>
+    <title>##msg:title##</title>
+    <!-- TOKYO| Facebook Pixel Code -->
+    <script>
+      ! function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '100741043685142');
+      fbq('trackSingle', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=100741043685142&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- FUKUOKA | Facebook Pixel Code -->
+    <script>
+      ! function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '796113740827935');
+      fbq('trackSingle', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=796113740827935&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- FUKUOKA Twitter universal website tag code -->
+    <script>
+      ! function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js', a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+      }(window, document, 'script');
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq('init', 'o145z');
+      twq('track', 'PageView');
+    </script>
+    <!-- End FUKUOKA Twitter universal website tag code -->
+  </head>
+
+  <body>
+    <header>
+      <!--ヘッダー画像-->
+      <div class="box" id="b1362"><img alt="ジーズアカデミーUNIT_YAMAGUCHI" src="##img:159##" />
+      </div>
+    </header>
+
+    <div>
+      <div id="content">
+        ##form##
+        <!--Gsロゴ-->
+        <div class="box" id="gslogo">
+        </div>
+
+        <h2 class="box" id="b1364">学校説明会・個別相談会予約フォーム</h2>
+
+        <p class="box" id="b1369">
+          <strong>未経験歓迎！週末集中コース2022年3月生受付中！<br><br>個別相談を希望される方は希望日にて「個別相談希望」をお選びください。</strong>
+        </p>
+
+
+
+        <p class="box" id="b1359">##msg:message##</p>
+
+        <div class="box" id="b1360">
+          <p>※ は必須</p>
+          ##form:errors##
+
+          <p id="info"><strong class="required">（必須）の項目は必ずご入力ください</strong></p>
+
+          <table border="0">
+            <!-- フォーム -->
+          </table>
+
+          <table id="form">
+            <!-- 予約日 -->
+            <tbody>
+              <tr>
+                <th>##e_8410:title##<strong class="required">※</strong></th>
+                <td>##e_8410## ##e_8410:errors##</td>
+              </tr>
+              <tr>
+                <th>##e_8433:title##<strong class="required">※</strong></th>
+                <td id="e_8433">##e_8433## ##e_8433:errors##</td>
+              </tr>
+              <!-- 名前 -->
+              <tr>
+                <th>##e_8411:title##<strong class="required">※</strong></th>
+                <td>##e_8411## ##e_8411:errors##</td>
+              </tr>
+              <!-- ふりがな -->
+              <tr>
+                <th>##e_8412:title##<strong class="required">※</strong></th>
+                <td>##e_8412## ##e_8412:errors##</td>
+              </tr>
+              <!-- メールアドレス -->
+              <tr>
+                <th>##e_8421:title##<strong class="required">※</strong><span class="notice">（半角で正しく記載してください）</span></th>
+                <td>##e_8421## ##e_8421:errors##</td>
+              </tr>
+              <!-- 電話番号 -->
+              <tr>
+                <th>##e_8434:title##<strong class="required">※</strong></th>
+                <td>##e_8434## ##e_8434:errors##</td>
+              </tr>
+
+              <!-- 市区町村 -->
+              <tr>
+                <th>##e_8436:title##<strong class="required">※</strong></th>
+                <td>##e_8436## ##e_8436:errors##</td>
+              </tr>
+              <!-- 参加の目的 -->
+              <tr>
+                <th>##e_8417:title##<strong class="required">※</strong></th>
+                <td>##e_8417## ##e_8417:errors##</td>
+              </tr>
+              <!-- 紹介者 -->
+              <tr>
+                <th>##e_8429:title##<span class="notice">（ご紹介者がいる場合のみ）</span></th>
+                <td>##e_8429## ##e_8429:errors##</td>
+              </tr>
+              <tr style="display:none">
+                <th>##e_8430:title##</th>
+                <td>##e_8430## ##e_8430:errors##</td>
+              </tr>
+              <tr style="display:none">
+                <th>##e_8419:title##</th>
+                <td>##e_8419## ##e_8419:errors##</td>
+              </tr>
+              <tr style="display:none">
+                <th>##e_8444:title##</th>
+                <td>##e_8444## ##e_8444:errors##</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="box" id="b1361"><input id="__send" name="__send" type="submit" value="##msg:send_button##" /></div>
+        ##/form##
+      </div>
+      <script src="##js:68##" type="text/javascript"></script>
+      <!-- <script type="text/javascript">
+      //オンロードさせ、リロード時に選択を保持
+      window.onload = entryChange1;
+    </script> -->
+      <script type="text/javascript">
+        //ふりがなを勝手に入れる
+        $(function () {
+          $.fn.autoKana('#e_8411', '#e_8412', {
+            katakana: true //true：カタカナ、false：ひらがな（デフォルト）
+          });
+
+          //説明会日程を「日付」欄に入れる
+          $("#YamaguchiReserveSelect").on('change', function () {
+            var selectedText = $("#YamaguchiReserveSelect option:selected").text();
+            selectedText = "2021年" + selectedText;
+            var date = selectedText.match(/(\d+)年(\d+)\/(\d+)\（/);
+            var year = date[1];
+            var month = ("0" + date[2]).slice(-2);
+            var day = ("0" + date[3]).slice(-2);
+            $('#e_8419\\[ymd\\]').val(year + month + day);
+          });
+
+          //IDの生成
+          var date = new Date();
+          var year = date.getFullYear();
+          var month = date.getMonth() + 1;
+          var day = date.getDate();
+          var bbb = Math.floor(Math.random() * 1000);
+          var ccc = year.toString() + month.toString() + day.toString() + bbb;
+          document.getElementById("e_8430").value = ccc;
+        });
+        //抽出条件用の複数選択をチェック(check_の後の数字を変える)
+        let checkbox = document.getElementById('check_3');
+        checkbox.checked = true;
+
+
+
+        //ページ移動の時に出るヤツ
+        var onBeforeunloadHandler = function (e) {
+          e.returnValue = '入力中のページから移動しますか？'; //このメッセージは表示されない。
+        };
+        // イベントを登録
+        window.addEventListener('beforeunload', onBeforeunloadHandler, false);
+
+        document.forms[0].addEventListener('submit', function (e) {
+          // イベントを削除
+          window.removeEventListener('beforeunload', onBeforeunloadHandler, false);
+        }, false);
+      </script>
+    </div>
+
+
+  </body>
+
+</html>
